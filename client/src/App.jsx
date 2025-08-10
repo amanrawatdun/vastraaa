@@ -11,7 +11,7 @@ import Profile from './pages/Profile';
 import Order from './pages/Order';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import ProductList from './pages/admin/ProductList';
-import AddProduct from './pages/admin/addProduct';
+import AddProduct from './pages/admin/AddProduct';
 import EditProduct from './pages/admin/EditProduct';
 import OrderList from './pages/admin/OrderList';
 import UserList from './pages/admin/UserList';

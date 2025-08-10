@@ -104,17 +104,3 @@ Copy
 Edit
 cd client
 npm start
-📸 Screenshots
-Home Page	Product Page	Cart Page
-
-📜 License
-This project is licensed under the MIT License – you can use, modify, and distribute it.
-
-🤝 Contributing
-Pull requests are welcome.
-For major changes, open an issue first to discuss the proposed changes.
-
-👨‍💻 Author
-Aman Rawat
-📧 Email: your-email@example.com
-🔗 GitHub: @your-username

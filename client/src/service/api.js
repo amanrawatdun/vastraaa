@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL:import.https://vastraaa-backend.onrender.com
+    baseURL:https://vastraaa-backend.onrender.com
 })
 
 api.interceptors.request.use((data)=>{

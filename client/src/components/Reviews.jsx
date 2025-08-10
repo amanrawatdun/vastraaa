@@ -9,7 +9,7 @@ const Reviews = () => {
                     <div className="text-yellow-400 text-2xl mb-2">
                         ★★★★★
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">John Doe</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">Nishu Khanduri</h3>
                     <p className="text-gray-600 text-sm italic">
                         "This product is amazing! The quality is top-notch and it exceeded my expectations. I would highly recommend it to anyone."
                     </p>
@@ -19,7 +19,7 @@ const Reviews = () => {
                     <div className="text-yellow-400 text-2xl mb-2">
                         ★★★★☆
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">Jane Smith</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">Satyam Rothan</h3>
                     <p className="text-gray-600 text-sm italic">
                         "A great experience overall. The customer service was fantastic and the delivery was prompt. Very satisfied with my purchase."
                     </p>
@@ -29,7 +29,7 @@ const Reviews = () => {
                     <div className="text-yellow-400 text-2xl mb-2">
                         ★★★★★
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">Michael Brown</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">Dev</h3>
                     <p className="text-gray-600 text-sm italic">
                         "Exactly what I was looking for. The features are exactly as described. I'm very happy with my new item."
                     </p>
@@ -39,7 +39,7 @@ const Reviews = () => {
                     <div className="text-yellow-400 text-2xl mb-2">
                         ★★★☆☆
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">Emily White</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">Deepak</h3>
                     <p className="text-gray-600 text-sm italic">
                         "It's a good product, but there's room for improvement. I found a few minor issues, but nothing that would stop me from using it."
                     </p>

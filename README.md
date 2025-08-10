@@ -1,87 +1,120 @@
-# Vastraa - E-commerce Application
+<!-- Project Banner -->
+<p align="center">
+  <img src="screenshots/banner.png" alt="Vastraa Banner" width="100%" />
+</p>
 
-Vastraa is a full-stack e-commerce application with a modern, responsive design. It features product listings, pagination for efficient browsing, and a complete backend API for managing products.
+<h1 align="center">🛍️ Vastraa – E-Commerce Clothing Website</h1>
 
----
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/your-username/vastraa?color=blue&style=for-the-badge" />
+  <img src="https://img.shields.io/github/repo-size/your-username/vastraa?color=purple&style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/your-username/vastraa?style=for-the-badge&color=yellow" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+</p>
 
-### Key Features 🛍️
-* **Paginated Product Display**: Efficiently loads products in chunks for better performance.
-* **Product Management**: A robust backend API for creating, updating, and deleting products.
-* **State Management**: Utilizes Redux Toolkit for predictable state management on the client side.
-* **Responsive Design**: A user-friendly interface that works on all device sizes.
-
----
-
-### Technologies Used 💻
-**Client (Frontend)**
-* **React**: A JavaScript library for building user interfaces.
-* **Redux Toolkit**: The standard for writing Redux logic.
-* **Tailwind CSS**: A utility-first CSS framework for rapid styling.
-* **Vite**: A fast build tool for modern web projects.
-
-**Server (Backend)**
-* **Node.js**: A JavaScript runtime for building the backend.
-* **Express**: A web framework for Node.js.
-* **Mongoose**: An ODM (Object Data Modeling) library for MongoDB and Node.js.
-* **Axios**: A promise-based HTTP client for making API requests.
+> **Vastraa** is a modern **MERN stack** e-commerce platform for selling clothing items online, offering a seamless shopping experience with authentication, product management, payments, and responsive UI.
 
 ---
 
-### Prerequisites ⚙️
-Ensure you have the following installed on your system:
-* **Node.js** (version 18 or higher)
-* **npm** or **yarn**
+## ✨ Features
+
+- 🔐 **Authentication & Authorization** – Secure login, signup, and JWT-based authentication.
+- 👗 **Product Management** – Add, edit, delete clothing products with images.
+- 🛒 **Shopping Cart** – Add to cart, update, and remove products.
+- 💳 **Payments** – Integrated Razorpay payment gateway.
+- 📦 **Order Management** – Track orders with admin control.
+- 📊 **Admin Dashboard** – View sales analytics & manage store.
+- 📱 **Responsive Design** – Works on desktop, tablet, and mobile.
+- ☁ **Image Upload** – Powered by Cloudinary.
 
 ---
 
-### Installation and Setup 🚀
-Follow these steps to get the project up and running locally.
+## 🛠️ Tech Stack
 
-1.  **Clone the Repository**
-    ```bash
-    git clone [https://github.com/YourUsername/v-astra.git](https://github.com/YourUsername/v-astra.git)
-    cd v-astra
-    ```
-
-2.  **Set Up Environment Variables**
-    Create a `.env` file in the `server` directory and add your database connection string and any other required variables, using the `.env.example` file as a template.
-    ```bash
-    # Example .env file in server/
-    MONGO_URI="your_mongodb_connection_string"
-    PORT=5000
-    ```
-
-3.  **Install Dependencies**
-    You need to install dependencies for both the client and the server.
-    ```bash
-    # Install server dependencies
-    cd server
-    npm install
-
-    # Install client dependencies
-    cd ../client
-    npm install
-    ```
+| Frontend | Backend | Database | Other |
+|----------|---------|----------|-------|
+| React.js | Node.js | MongoDB  | Cloudinary |
+| Redux Toolkit | Express.js | Mongoose | Razorpay |
+| Tailwind CSS | JWT Auth |        |        |
 
 ---
 
-### Usage ▶️
-To start the application, you'll need to run the client and server separately.
+## 📂 Folder Structure
+Vastraa/
+│
+├── client/ # React frontend
+├── server/ # Node.js backend
+├── .env # Environment variables
+├── package.json
+└── README.md
 
-1.  **Start the Server**
-    Open a terminal and navigate to the `server` directory.
-    ```bash
-    cd server
-    npm start
-    ```
-    The server will run at `http://localhost:5000`.
+yaml
+Copy
+Edit
 
-2.  **Start the Client**
-    Open a separate terminal and navigate to the `client` directory.
-    ```bash
-    cd client
-    npm run dev
-    ```
-    The client will run at `http://localhost:3000`.
+---
 
-You should now be able to view the application in your browser and see the paginated products!
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/vastraa.git
+cd vastraa
+2️⃣ Install dependencies
+Backend
+
+bash
+Copy
+Edit
+cd server
+npm install
+Frontend
+
+bash
+Copy
+Edit
+cd ../client
+npm install
+3️⃣ Configure environment variables
+Create .env in server/:
+
+env
+Copy
+Edit
+PORT=5000
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+4️⃣ Start development
+Backend
+
+bash
+Copy
+Edit
+cd server
+npm start
+Frontend
+
+bash
+Copy
+Edit
+cd client
+npm start
+📸 Screenshots
+Home Page	Product Page	Cart Page
+
+📜 License
+This project is licensed under the MIT License – you can use, modify, and distribute it.
+
+🤝 Contributing
+Pull requests are welcome.
+For major changes, open an issue first to discuss the proposed changes.
+
+👨‍💻 Author
+Aman Rawat
+📧 Email: your-email@example.com
+🔗 GitHub: @your-username

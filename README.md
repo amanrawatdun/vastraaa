@@ -1,32 +1,32 @@
 <!-- Banner -->
-<p align="center">
-  <h>Vastraaa</h>
+<p align="center">  
 </p>
 
-<h1 align="center">🛍️ Vastraa – E-Commerce Clothing Website</h1>
+<h1 align="center">🛍️ Vastraaa – E-Commerce Clothing Platform</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/your-username/vastraa?color=blue&style=for-the-badge" />
-  <img src="https://img.shields.io/github/repo-size/your-username/vastraa?color=purple&style=for-the-badge" />
-  <img src="https://img.shields.io/github/stars/your-username/vastraa?style=for-the-badge&color=yellow" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/amanrawatdun/vastraaa?color=blue&style=for-the-badge" />
+  <img src="https://img.shields.io/github/repo-size/amanrawatdun/vastraaa?color=purple&style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/amanrawatdun/vastraaa?style=for-the-badge&color=yellow" />
+  
 </p>
 
 <p align="center">
-  A modern and responsive MERN stack e-commerce platform for clothing, offering authentication, product management, payments, and admin analytics.
+  A modern, full-stack MERN e-commerce platform for clothing, featuring authentication, product management, secure payments, admin analytics, and multi-core performance optimization via Node.js Clustering.
 </p>
 
 ---
 
 ## ✨ Features
 
-- 🔐 **Authentication & Authorization** – Secure login/signup with JWT.
-- 👗 **Product Management** – Add, edit, and delete clothing products with Cloudinary image uploads.
-- 🛒 **Shopping Cart** – Add to cart, update quantities, remove items.
-- 💳 **Payments** – Razorpay integration for secure transactions.
-- 📦 **Order Management** – Order tracking and admin control.
-- 📊 **Admin Dashboard** – Sales analytics, order management, and user control.
-- 📱 **Responsive UI** – Built with Tailwind CSS for all devices.
+- 🔐 **Authentication & Authorization** – Secure JWT-based login & signup.
+- 👗 **Product Management** – Add, edit, delete clothing items with Cloudinary image uploads.
+- 🛒 **Shopping Cart** – Persistent cart with quantity updates and item removal.
+- 💳 **Secure Payments** – Razorpay integration for transactions.
+- 📦 **Order Management** – Track orders with admin controls.
+- 📊 **Admin Dashboard** – Sales analytics, user & product management.
+- 📱 **Responsive UI** – Tailwind CSS for seamless mobile/desktop experience.
+- ⚡ **Performance Boost** – Node.js Clustering for multi-CPU request handling.
 
 ---
 
@@ -35,47 +35,64 @@
 | Category   | Technology |
 |------------|------------|
 | Frontend   | React.js, Redux Toolkit, Tailwind CSS |
-| Backend    | Node.js, Express.js |
+| Backend    | Node.js, Express.js, Node.js Cluster |
 | Database   | MongoDB + Mongoose |
-| Others     | Cloudinary, Razorpay, JWT Authentication |
+| Others     | Cloudinary, Razorpay, JWT, dotenv |
 
 ---
 
-## 📂 Folder Structure
-Vastraa/
+## ⚡ Node.js Clustering (Performance Optimization)
+
+Vastraaa’s backend uses **Node.js Cluster Module** to fully utilize multi-core CPUs.  
+This improves throughput, reduces latency, and ensures high availability.
+
+```javascript
+import cluster from 'cluster';
+import os from 'os';
+import app from './app.js';
+
+const PORT = process.env.PORT || 5000;
+
+if (cluster.isPrimary) {
+  const numCPUs = os.cpus().length;
+  console.log(`Master ${process.pid} running, forking ${numCPUs} workers...`);
+  for (let i = 0; i < numCPUs; i++) cluster.fork();
+
+  cluster.on('exit', worker => {
+    console.log(`Worker ${worker.process.pid} died, creating new...`);
+    cluster.fork();
+  });
+} else {
+  app.listen(PORT, () => {
+    console.log(`Worker ${process.pid} listening on port ${PORT}`);
+  });
+}
+
+📂 Folder Structure
+
+Vastraaa/
 │
-├── client/ # React frontend
-├── server/ # Node.js backend
-├── .env # Environment variables
+├── client/        # React frontend
+├── server/        # Node.js backend
+├── .env           # Environment variables
 ├── package.json
 └── README.md
 
-
----
-
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the repository
-```bash
+⚙️ Installation & Setup
+1️⃣ Clone the repository
 git clone https://github.com/amanrawatdun/vastraaa.git
 cd vastraaa
 
 2️⃣ Install dependencies
 Backend
-
-bash
-Copy code
 cd server
 npm install
-Frontend
 
-bash
-Copy code
+Frontend
 cd ../client
 npm install
-3️⃣ Create .env file in server/ and add:
-env
-Copy code
+
+3️⃣ Create .env in server/
 PORT=5000
 MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_jwt_secret
@@ -94,13 +111,15 @@ Frontend
 cd client
 npm start
 
+🚀 Live Demo
+🔗 Frontend: https://vastraaa.vercel.app
+🔗 Backend API: https://vastraaa-4ti1.onrender.com
 
 🤝 Contributing
-Pull requests are welcome.
-For major changes, open an issue first to discuss your ideas.
+Pull requests are welcome!
+For major changes, please open an issue first to discuss the proposal.
 
 👨‍💻 Author
 Aman Rawat
 📧 Email: your-email@example.com
 🔗 GitHub: @amanrawatdun
-

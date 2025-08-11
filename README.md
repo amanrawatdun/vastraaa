@@ -121,5 +121,5 @@ For major changes, please open an issue first to discuss the proposal.
 
 👨‍💻 Author
 Aman Rawat
-📧 Email: your-email@example.com
+📧 Email: amanrwtsre@gamil.com
 🔗 GitHub: @amanrawatdun
